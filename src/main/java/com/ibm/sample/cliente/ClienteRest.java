@@ -245,7 +245,7 @@ public class ClienteRest extends PropagacaoContexto {
 			Optional<Cliente> clienteConsulta= clienteJpa.findById(cliente.getCpf());
 			spanConsulta.finish();
 			RetornoCliente retorno = new RetornoCliente();
-
+			Thread.sleep(2000);
 			
 			if (clienteConsulta.isPresent())
 			{
